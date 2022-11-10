@@ -12,15 +12,9 @@ export const validateRegisterInput = async (data) => {
 
   const existEmail = await User.findOne({ email: data.email }).lean().exec();
 
-  const existName = await User.findOne({ name: data.name }).lean().exec();
-
   if (existEmail) {
     errors.email = "email is already exist";
   }
-  if (existName) {
-    errors.name = "Name is already exist";
-  }
-
   if (!Validator.isLength(data.name, { min: 3, max: 30 })) {
     errors.name = "Name Must be between 3 and 30 characters!";
   }

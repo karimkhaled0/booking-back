@@ -1,8 +1,4 @@
 import { User } from "./user.model";
-import { Category } from "../category/category.model";
-import { verifyToken } from "../../utils/auth";
-import bcrypt from "bcryptjs";
-import { Task } from "../task/task.model";
 
 export const me = (req, res) => {
   res.status(200).json({ data: req.user });
