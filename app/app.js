@@ -6,12 +6,7 @@ import { config } from "./config/dev";
 import { json, urlencoded } from "body-parser";
 import userRouter from "./src/user/user.router";
 import { signin, signup, protect } from "./utils/auth";
-import taskRouter from "./src/task/task.router";
-import categoryRouter from "./src/category/category.router";
-import roomRouter from "./src/chat-room/chat-room.router";
 import * as http from "http";
-import { Server } from "socket.io";
-import { Room } from "./src/chat-room/chat-room.model";
 // app setup
 const app = express();
 const server = http.createServer(app);
