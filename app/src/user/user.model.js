@@ -30,6 +30,12 @@ const userSchema = new mongoose.Schema(
     photo: {
       type: String,
     },
+    birth: {
+      type: String,
+    },
+    gendat: {
+      type: String,
+    },
   },
   { timestamps: true }
 );
