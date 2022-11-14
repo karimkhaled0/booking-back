@@ -28,7 +28,8 @@ const userSchema = new mongoose.Schema(
       type: String,
     },
     photo: {
-      type: String,
+      data: Buffer,
+      contentType: String,
     },
     birth: {
       type: String,
