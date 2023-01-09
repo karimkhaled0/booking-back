@@ -1,6 +1,6 @@
 export const config = {
   secrets: {
-    dbConnection: "mongodb://localhost:27017/bookingapp",
+    dbConnection: "mongodb://127.0.0.1:27017/bookingapp",
     jwtSecret: "WinterIsComing",
     jwtExp: "2d",
   },
