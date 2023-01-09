@@ -1,4 +1,4 @@
-import { User } from "./user.model";
+import { User } from "./user.model.js";
 const multer = require("multer");
 const fs = require("fs");
 const path = require("path");

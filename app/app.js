@@ -2,10 +2,10 @@ import express from "express";
 import mongoose from "mongoose";
 import morgan from "morgan";
 import cors from "cors";
-import { config } from "./config/dev";
+import { config } from "./config/dev.js";
 import { json, urlencoded } from "body-parser";
-import userRouter from "./src/user/user.router";
-import { signin, signup, protect } from "./utils/auth";
+import userRouter from "./src/user/user.router.js";
+import { signin, signup, protect } from "./utils/auth.js";
 import * as http from "http";
 // app setup
 const app = express();

@@ -1,8 +1,8 @@
 import jwt from "jsonwebtoken";
-import { config } from "../config/dev";
-import { User } from "../src/user/user.model";
-import { validateLoginInput } from "../validation/login";
-import { validateRegisterInput } from "../validation/register";
+import { config } from "../config/dev.js";
+import { User } from "../src/user/user.model.js";
+import { validateLoginInput } from "../validation/login.js";
+import { validateRegisterInput } from "../validation/register.js";
 
 export const newToken = (user) => {
   return jwt.sign({ id: user.id }, config.secrets.jwtSecret, {

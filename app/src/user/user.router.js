@@ -6,7 +6,7 @@ import {
   updateUser,
   uploadPhoto,
   upload,
-} from "./user.controller";
+} from "./user.controller.js";
 
 const router = Router();
 

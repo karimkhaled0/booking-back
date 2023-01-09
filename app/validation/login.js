@@ -1,7 +1,7 @@
 import Validator from "validator";
-import isEmpty from "./isEmpty";
+import isEmpty from "./isEmpty.js";
 
-import { User } from "../src/user/user.model";
+import { User } from "../src/user/user.model.js";
 
 export const validateLoginInput = async (data) => {
   let errors = {};
