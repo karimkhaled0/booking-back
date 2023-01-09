@@ -6,6 +6,7 @@
   "engines": {
     "node": "14.x"
   },
+  "type": "module",
   "scripts": {
     "build": "babel app --out-dir dist",
     "start": "node dist/app.js",
