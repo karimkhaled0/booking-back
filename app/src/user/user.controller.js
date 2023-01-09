@@ -1,7 +1,7 @@
 import { User } from "./user.model.js";
-import * as multer from "multer";
-import * as fs from "fs";
-import * as path from "path";
+import multer from "multer";
+import fs from "fs";
+import path from "path";
 
 // The storage
 const storage = multer.diskStorage({
